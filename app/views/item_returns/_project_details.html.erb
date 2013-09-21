@@ -1,0 +1,37 @@
+<div class="item-container" id="formHolder">	
+		<div id="form-container">
+			<div class="header-textproj">
+				<div style="width:100px">Projects Details</div>
+				<div class="border-filler"></div>
+			</div>
+			<div class="field-holder">
+				<div id="form-label">
+					Project Name :
+				</div>
+				<div id="form-field">
+					<%= text_field :project, :name, {:disabled => true, :value => @item.project.name } %>
+				</div>
+			</div>
+			<div class="field-holder">
+				<div id="form-label">
+					Borrowed Name :
+				</div>
+				<div id="form-field">
+					<%= text_field :project, :user_id, {:disabled => true, :value => @item.user.name } %>
+				</div>
+			</div>
+			<div class="field-holder">
+				<div id="form-label">
+					Comment :
+				</div>
+				<div id="form-field">
+					<%= text_area :project, :comment, { :size=>"40*40", :disabled => true, :value => @item.comment } %>
+				</div>
+			</div>
+		</div>
+</div>
+<div style="clear:both"></div>
+								
+						
+			
+			

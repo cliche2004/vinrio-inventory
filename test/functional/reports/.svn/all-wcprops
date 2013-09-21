@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/aplj_inventory/!svn/ver/241/rails/development/test/functional/reports
+END
+usage_per_projects_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/aplj_inventory/!svn/ver/241/rails/development/test/functional/reports/usage_per_projects_controller_test.rb
+END
+withdrawal_per_persons_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/aplj_inventory/!svn/ver/241/rails/development/test/functional/reports/withdrawal_per_persons_controller_test.rb
+END

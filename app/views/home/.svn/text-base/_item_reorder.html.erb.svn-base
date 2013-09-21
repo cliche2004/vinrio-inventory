@@ -1,0 +1,40 @@
+<div id="list">
+  <div class="headtitle">
+  	<div class="headtxt">Item on or below reorder qty</div>
+  </div>
+  <div id="item_refill_table"> 
+	  
+	  <table class="listing" width="100%" cellspacing=0 cellpadding=0>
+    	<thead class="lhead">
+    		<th width="25px" align='center'>ID</th>
+    		<th>Name</th>
+    		<th>Brand</th>
+    		<th width="5%" align='center'>QTY</th>
+    	</thead>
+    	<tbody>
+
+    	  <% for item in @items do %>
+    			<tr class="<%= cycle('odd','')%>" >					
+    				<td align='center'><%=item.id%></td>
+    				<td>
+    					<%= item.name %>
+    					<div class="ssub">
+    					    barcode #:<%= item.barcode %>
+    					</div>
+    				</td>
+    				<td>
+    				  <%= item.brand.name if item.brand %>
+    				</td>
+    				<td align='center'>
+    				  <%= item.current_qty %>
+    				</td>
+    			</tr>				
+    		<% end %>
+
+    	</tbody>
+    </table>
+    <div class="list-footer"></div>
+	  
+	  
+	</div>
+</div>

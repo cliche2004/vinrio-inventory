@@ -1,0 +1,44 @@
+<div class="topheadtitle">		
+	<div class="headtxt">User details</div>
+</div>	
+	<%= render :partial => "project_details" %>	
+<div class="border-filler"></div>
+<div id="tabs">
+	<ul>
+		<% for project in @projects %>
+			<li>
+			  <div style="text-align:center">
+			    <a href="#project-tab-<%= project.id %>">
+			      <%= project.project.project_unique_id %><br />
+			      <b><%= project.project.client.name %></b>
+			      
+			    </a>
+			  </div>
+			</li>
+		<% end%>
+	</ul>
+	
+	<% for project in @projects %>
+		<div id="project-tab-<%= project.id %>">
+		  Project Name:
+      <b><%= "#{project.project.project_unique_id} - #{project.project.client.name}" %></b>
+			<div class="lcontent" id="list"  style="margin-left: -20px;margin-right: -20px;">
+			  <div id="message_area" style="display:none"></div>
+				<%= render :partial => "assign_item_list", :locals => { :assigned_items => project.item_releases } %>
+				<br />
+				<div id="prr_<%= project.id %>">
+				  <%= render :partial => "item_return_list", :locals => { :returned_items => project.item_returns } %>
+				</div>
+			</div>
+		</div>				
+	<% end %>
+	
+</div>
+
+</div>
+
+<script>
+	$(function() {
+		$( "#tabs" ).tabs();
+	});
+</script>

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/aplj_inventory/!svn/ver/241/rails/development/test/unit/helpers/reports
+END
+usage_per_projects_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/aplj_inventory/!svn/ver/241/rails/development/test/unit/helpers/reports/usage_per_projects_helper_test.rb
+END
+withdrawal_per_persons_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/aplj_inventory/!svn/ver/241/rails/development/test/unit/helpers/reports/withdrawal_per_persons_helper_test.rb
+END

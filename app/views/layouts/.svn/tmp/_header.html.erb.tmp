@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="author" content="PurpleChamber" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+		
+	<%= stylesheet_link_tag('jquery.fancybox-1.3.4','jquery-ui-1.8.11.custom') %>
+    <%= stylesheet_link_tag('styles') %>
+	
+    <%= javascript_include_tag \
+				'prototype'
+	%>
+
+	<%= javascript_include_tag('jquery-1.5.1.min','jquery-ui-1.8.11.custom.min') %>
+	<%= javascript_include_tag('jquery.mousewheel-3.0.4.pack', 'jquery.fancybox-1.3.4.pack') %>
+	
+	<script type="text/javascript">
+	  jQuery.noConflict();
+
+	</script>
+	
+	<%= javascript_include_tag('functions') %>
+    		
+	<script type="text/javascript">
+			jQuery(function(){
+
+				// Accordion
+<<<<<<< .mine
+				$("#accordion").accordion({ header: "p", autoheight: false });
+
+=======
+				jQuery("#accordion").accordion({ header: "p" });
+	
+>>>>>>> .r71
+				// Tabs
+				jQuery('#tabs').tabs();
+	
+
+				// Dialog			
+				jQuery('#dialog').dialog({
+					autoOpen: false,
+					width: 600,
+					buttons: {
+						"Ok": function() { 
+							jQuery(this).dialog("close"); 
+						}, 
+						"Cancel": function() { 
+							jQuery(this).dialog("close"); 
+						} 
+					}
+				});
+				
+				// Dialog Link
+				jQuery('#dialog_link').click(function(){
+					jQuery('#dialog').dialog('open');
+					return false;
+				});
+
+				// Datepicker
+				jQuery('#datepicker').datepicker({
+					inline: true
+				});
+				
+				// Slider
+				jQuery('#slider').slider({
+					range: true,
+					values: [17, 67]
+				});
+				
+				// Progressbar
+				jQuery("#progressbar").progressbar({
+					value: 20 
+				});
+				
+				//hover states on the static widgets
+				jQuery('#dialog_link, ul#icons li').hover(
+					function() { $(this).addClass('ui-state-hover'); }, 
+					function() { $(this).removeClass('ui-state-hover'); }
+				);
+				
+				/*
+			*   Examples - various
+			*/
+
+			jQuery("#various1").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+
+			jQuery("#various2").fancybox();
+
+			jQuery("#various3").fancybox({
+				'width'				: '75%',
+				'height'			: '75%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+
+			jQuery("#various4").fancybox({
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+				
+			});
+					
+	</script>
+	
+		
+	</head>
+		<body>

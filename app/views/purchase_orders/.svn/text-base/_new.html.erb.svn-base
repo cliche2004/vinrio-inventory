@@ -1,0 +1,15 @@
+<div class="item-container" id="formHolder">	
+	<div style="width:800px;">		
+					
+			<%= render :partial => "form"%>	
+			<div style="clear:both"></div>
+			<div style="margin-top: 20px">
+				<div style="float: left; margin-top: 5px;">
+
+				</div>
+			</div>
+</div>
+</div>
+
+
+<div style="clear:both"></div>

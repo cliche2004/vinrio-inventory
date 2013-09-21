@@ -1,0 +1,24 @@
+<div class="tcontent">
+  <div id="hlist">
+	<div class="topheadtitle">
+		<div class="headtxt">Purchase Order</div>
+	</div>	
+	
+	<%= form_remote_tag(:url => {:action => "ajax_update"}) %>
+	
+	<%= render :partial => "new" %>
+	<div class="border-filler"></div>
+	
+	<div class="lcontent" id="list">
+		<%= render :partial => "item_list" %>
+	</div>
+	<div class="lcontent" id="item_list">
+		<%= render :partial => "assign_item_list" %>
+	</div>
+	
+	<div style="float: left; margin-top: 5px;">
+		<%= image_submit_tag ("update.jpg") %>
+	</div>
+	</form>
+</div>
+</div>

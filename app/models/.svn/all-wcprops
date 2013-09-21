@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/aplj_inventory/!svn/ver/249/rails/development/app/models
+END
+supplier_contact.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/aplj_inventory/!svn/ver/241/rails/development/app/models/supplier_contact.rb
+END
+supplier_contact_name.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/aplj_inventory/!svn/ver/58/rails/development/app/models/supplier_contact_name.rb
+END
+unit.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/aplj_inventory/!svn/ver/254/rails/development/app/models/unit.rb
+END
+employee.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/aplj_inventory/!svn/ver/244/rails/development/app/models/employee.rb
+END
+measurement.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/aplj_inventory/!svn/ver/168/rails/development/app/models/measurement.rb
+END
+storage_location.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/aplj_inventory/!svn/ver/168/rails/development/app/models/storage_location.rb
+END
+item_return.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/aplj_inventory/!svn/ver/246/rails/development/app/models/item_return.rb
+END
+item_asset.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/aplj_inventory/!svn/ver/234/rails/development/app/models/item_asset.rb
+END
+item_release.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/aplj_inventory/!svn/ver/249/rails/development/app/models/item_release.rb
+END
+purchase_recieve_detail.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/aplj_inventory/!svn/ver/168/rails/development/app/models/purchase_recieve_detail.rb
+END
+item.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/aplj_inventory/!svn/ver/255/rails/development/app/models/item.rb
+END
+client.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/aplj_inventory/!svn/ver/238/rails/development/app/models/client.rb
+END
+user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/aplj_inventory/!svn/ver/248/rails/development/app/models/user.rb
+END
+man_power_assignment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/aplj_inventory/!svn/ver/239/rails/development/app/models/man_power_assignment.rb
+END
+item_disbursement.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/aplj_inventory/!svn/ver/244/rails/development/app/models/item_disbursement.rb
+END
+brand.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/aplj_inventory/!svn/ver/175/rails/development/app/models/brand.rb
+END
+purchase_order_detail.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/aplj_inventory/!svn/ver/199/rails/development/app/models/purchase_order_detail.rb
+END
+supplier_contact_info.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/aplj_inventory/!svn/ver/58/rails/development/app/models/supplier_contact_info.rb
+END
+assignment_history.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/aplj_inventory/!svn/ver/48/rails/development/app/models/assignment_history.rb
+END
+accessory.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/aplj_inventory/!svn/ver/194/rails/development/app/models/accessory.rb
+END
+contact_type.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/aplj_inventory/!svn/ver/241/rails/development/app/models/contact_type.rb
+END
+item_type.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/aplj_inventory/!svn/ver/168/rails/development/app/models/item_type.rb
+END
+problem.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/aplj_inventory/!svn/ver/239/rails/development/app/models/problem.rb
+END
+man_power_assignment_history.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/aplj_inventory/!svn/ver/243/rails/development/app/models/man_power_assignment_history.rb
+END
+supplier.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/aplj_inventory/!svn/ver/241/rails/development/app/models/supplier.rb
+END
+item_specific.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/aplj_inventory/!svn/ver/58/rails/development/app/models/item_specific.rb
+END
+user_contact_info.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/aplj_inventory/!svn/ver/42/rails/development/app/models/user_contact_info.rb
+END
+purchase_order.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/aplj_inventory/!svn/ver/241/rails/development/app/models/purchase_order.rb
+END
+project.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/aplj_inventory/!svn/ver/240/rails/development/app/models/project.rb
+END
+supplier_price_history.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/aplj_inventory/!svn/ver/218/rails/development/app/models/supplier_price_history.rb
+END
+purchase_recieve.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/aplj_inventory/!svn/ver/168/rails/development/app/models/purchase_recieve.rb
+END

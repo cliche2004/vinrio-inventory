@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="author" content="PurpleChamber" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	
+</head>
+	<body class='login_body' >		
+		<%= stylesheet_link_tag('jquery.fancybox-1.3.4','jquery-ui-1.8.11.custom') %>
+	    <%= stylesheet_link_tag('styles') %>
+	    
+				<div class="login_pg">
+					<%= yield %>
+				</div>   
+		
+			<div id="footer" class="clearfix">
+							
+			</div><!--footer ends-->
+			
+	</body>
+</html>

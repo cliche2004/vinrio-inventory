@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/aplj_inventory/!svn/ver/241/rails/development/app/views/suppliers
+END
+_index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/aplj_inventory/!svn/ver/105/rails/development/app/views/suppliers/_index.html.erb
+END
+_new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/aplj_inventory/!svn/ver/199/rails/development/app/views/suppliers/_new.html.erb
+END
+_list.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/aplj_inventory/!svn/ver/241/rails/development/app/views/suppliers/_list.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/aplj_inventory/!svn/ver/238/rails/development/app/views/suppliers/_form.html.erb
+END
+_edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/aplj_inventory/!svn/ver/105/rails/development/app/views/suppliers/_edit.html.erb
+END

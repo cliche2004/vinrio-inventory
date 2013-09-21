@@ -1,0 +1,32 @@
+<div class="headtitle">
+		<div class="headtxt">Cient Listing</div>
+</div>
+<div >
+	<table class="listing" width="100%" cellspacing=0 cellpadding=0>
+		<thead class="lhead">
+			<th>Client Name</th>
+			<th>Contact Person</th>
+			<th>Contact Details</th>
+			<th></th>
+		</thead>
+		<tbody>
+			<% for client in @clients do %>
+				<tr class="<%= cycle('odd','')%>">
+					<td><%= client.name %></td>
+					<td><%= client.contact_person %></td>
+					<td><%= client.contact_details %></td>
+					<td style="float:right;">
+					<span>
+	 	             	<%= link_to_remote image_tag('icons/edit.gif',:title=>'Update' ),
+	 	             	                    :url => {:action => 'ajax_edit', :id => client.id } %>
+                            	<%= link_to_remote image_tag('icons/delete.png',:title=>'Delete' ),
+	 	             	                    :url => {:action => 'ajax_delete', :id => client.id }, 
+											:confirm => 'Are you sure to delete?' %>
+	                </span>
+					</td>
+				</tr>				
+			<%end%>
+		</tbody>
+	</table>
+	<div class="list-footer"></div>
+</div>

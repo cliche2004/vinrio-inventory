@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/aplj_inventory/!svn/ver/31/rails/development/script
+END
+console
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/aplj_inventory/!svn/ver/31/rails/development/script/console
+END
+server
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/aplj_inventory/!svn/ver/31/rails/development/script/server
+END
+dbconsole
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/aplj_inventory/!svn/ver/31/rails/development/script/dbconsole
+END
+destroy
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/aplj_inventory/!svn/ver/31/rails/development/script/destroy
+END
+runner
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/aplj_inventory/!svn/ver/31/rails/development/script/runner
+END
+about
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/aplj_inventory/!svn/ver/31/rails/development/script/about
+END
+generate
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/aplj_inventory/!svn/ver/31/rails/development/script/generate
+END
+plugin
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/aplj_inventory/!svn/ver/31/rails/development/script/plugin
+END

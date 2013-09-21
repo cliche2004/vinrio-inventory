@@ -1,0 +1,29 @@
+<div class="border-filler"></div>	   
+<div class="header-textproj">
+<div style="width:400px">Employee Problem Report</div>
+</div>
+<div class="field-holder">
+		<div id="form-label">
+			Assigned Employee:
+		</div>
+		<div id="form-field">
+			<%= collection_select(:problem, :employee_id, @assigned_users, :id, :full_name, {}, :style => 'width: 180px' ) %>			
+		</div>
+</div>
+<div style="clear:both"></div>
+<div class="field-holder">
+		<div id="form-label">
+			Report :
+		</div>
+		<div id="form-field">
+			<%= hidden_field_tag :project_id, @project.id %>
+			<%= text_area :problem, :report, :style=>"width: 454px;height: 100px;" %>
+		</div>
+</div>
+<br /><br />
+
+<div style="clear:both"></div>
+
+
+
+	  

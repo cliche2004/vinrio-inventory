@@ -1,0 +1,6 @@
+<div>
+	<%= text_field_tag :search, @search %>
+</div>
+<script>
+   simple_search('search', '/tools/ajax_list')
+</script>

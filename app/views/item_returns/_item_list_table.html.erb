@@ -1,0 +1,29 @@
+<table class="listing" width="100%" cellspacing=0 cellpadding=0>
+	<thead class="lhead">
+		<th width="25px" align='center'>ID</th>
+		<th>Name</th>
+		<th width="30%">Assigned User</th>
+		<th width="10px">&nbsp;</th>
+	</thead>
+	<tbody>
+		<% for project in @projects do %>
+			<tr class="<%= cycle('odd','')%>" >					
+				<td align='center'><%= project.id %></td>
+				<td>
+				  <b><%= project.project.name if project.project %></b>
+			  	<div class="ssub">
+					    Created at: <%= project.created_at.strftime("%b %d, %Y") if project.created_at %> 
+					</div>
+				</td>
+				<td><%= project.assign_user.name if project.assign_user %></td>
+				<td>
+					<span>
+           	<%= link_to_remote image_tag('icons/options.gif',:title => 'Assign' ),
+           	                    :url => {:action => 'ajax_assigned', :id => project.id } %>           	                    
+          </span>
+				</td>
+			</tr>				
+		<%end%>
+	</tbody>
+</table>
+<div class="list-footer"></div>

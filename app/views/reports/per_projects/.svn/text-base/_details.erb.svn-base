@@ -1,0 +1,55 @@
+<style>
+ table th {
+	 text-align: left; 
+	 border-bottom: 1px solid #d7d7d7; 
+	 border-top: 1px solid #d7d7d7;
+ }
+</style>
+
+<div align = "left">
+	<table align="left" style="font-size: 12pt" cellspacing="0" cellpadding="4">
+	
+	<thead>
+		<th>Barcode</th>
+		<th>Picture</th>
+		<th>Serial No.</th>
+		<th>Tool/Equipment</th>
+		<th>Description</th>
+		<th>Borrowed Qty</th>
+		<th>Measurement</th>
+		<th>Price</th>
+		<th>Brand</th>
+		<th>Remarks</th>
+	</thead>
+	<tbody>
+	<% for rec in @records do %>
+			<tr class="<%= cycle('odd','')%>" >
+				<td align='center'><%= rec.item.barcode ? rec.item.barcode : '&nbsp' %></td>			
+				<td align='center'>&nbsp</td>
+				<td>
+					 <%= rec.item.serial_number  ? rec.item.serial_number : '&nbsp' %> 
+				</td>
+				<td>
+					<%= rec.item.name ? rec.item.name : '&nbsp' %>
+				</td>
+				<td>
+					<%= rec.item.description  ? rec.item.description : '&nbsp' %>
+				</td>
+				<td>
+					 &nbsp;
+				</td>
+				<td>
+					<%= rec.item.measurement.name if rec.item.measurement %>
+				</td>
+				<td>
+					 &nbsp;
+				</td>
+				<td>
+				  <%= rec.item.brand ? rec.item.brand.name : '&nbsp' %>
+				</td>		
+				<td align='center'><%= rec.item.status ? rec.item.status : '&nbsp' %></td>
+			</tr>				
+		<%end%>
+	</tbody>
+	</table>
+</div>

@@ -1,0 +1,49 @@
+<table class="listing" width="100%" cellspacing=0 cellpadding=0>
+	<thead class="lhead">
+		<th>Name</th>
+		<th width="10%">Brand</th>
+		<th width="10%">Type</th>
+		<th width="5%" align='center'>BQTY</th>
+		<th width="5%" align='center'>RQTY</th>
+		<th width="25%">Date</th>
+		<th width="3%">&nbsp;</th>
+	</thead>
+	<tbody>
+	  
+	  <% for item in @borrowed_items do %>
+			<tr class="<%= cycle('odd','')%>" >	
+				<td>
+					<%= item.item.name %>
+					<div class="ssub">
+					    serial #:<%= item.item.serial_number %> <br />
+					    barcode #:<%= item.item.barcode %>
+					</div>
+				</td>
+				<td>
+				  <%= item.item.brand.name if item.item.brand %>
+				</td>
+				<td>
+				  <%= item.item.type.name if item.item.type %>
+				</td>
+				<td align='center'><%= item.qty %></td>
+				<td align='center'><%= item.returned_qty %></td>
+				<td>
+				  <div class="ssub">
+					    Borrowed Date #:<%= item.created_at.strftime("%b %d, %Y at %l:%m %p") if item.created_at %> <br />
+					    Last Returned Date #:<%= item.date_returned.strftime("%b %d, %Y at %l:%m %p") if item.date_returned %>
+					</div>
+				</td>
+				<td>
+				  <% if current_user.is_admin? %>
+				    <%#= link_to image_tag('banners_add.gif', :title => "click to add"), nil,
+				                  :id => "click_#{item.id}", :onClick => "assignItem(#{item.id});return false" %>
+		
+				  <% end %>
+				</td>
+				
+			</tr>				
+		<% end %>
+
+	</tbody>
+</table>
+<div class="list-footer"></div>

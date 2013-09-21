@@ -1,0 +1,129 @@
+10
+
+dir
+253
+https://subversion.assembla.com/svn/aplj_inventory/rails/development
+https://subversion.assembla.com/svn/aplj_inventory
+
+
+
+2012-02-25T05:56:15.918117Z
+253
+jronyagz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4deb3575-9b1e-42fd-bd54-7e84ad1b9575
+
+test
+dir
+
+app
+dir
+
+tmp
+dir
+
+log
+dir
+
+Rakefile
+file
+
+
+
+
+2011-06-09T14:08:47.000000Z
+17f2f134da4cd31ea095d5868ca89e86
+2011-06-09T14:05:12.559779Z
+31
+cliche2004
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+307
+
+script
+dir
+
+config
+dir
+
+db
+dir
+
+doc
+dir
+
+lib
+dir
+
+vendor
+dir
+
+README
+file
+
+
+
+
+2011-06-09T14:08:47.000000Z
+a58e68a7599c976f071d5b9c6fa67fb3
+2011-06-09T14:05:12.559779Z
+31
+cliche2004
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10011
+
+public
+dir
+

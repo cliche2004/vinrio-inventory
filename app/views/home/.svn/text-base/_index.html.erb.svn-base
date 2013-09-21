@@ -1,0 +1,10 @@
+<div class="tcontent">
+  <div id="hlist">
+  	<div class="topheadtitle">
+  		<div class="headtxt">Dashboard</div>
+  	</div>			
+  	<div class="lcontent" id="list">
+  		<%= render :partial => "item_reorder" %>
+  	</div>
+  </div>
+</div>

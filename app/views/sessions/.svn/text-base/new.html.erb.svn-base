@@ -1,0 +1,34 @@
+<div class='top_img'></div>
+<div class='cntr_img'>
+	<% form_tag session_path do -%>
+		
+		<div class='login_field'>
+		  	<%= flash[:error] if flash[:error]  %>
+  			<%= flash[:notice] if flash[:notice]  %>
+			
+  			<p><%= label_tag 'username','USERNAME ', :class=>'login_text' %>
+  			<%= text_field_tag 'login', @login, :class=>'login_textfield' %></p>
+			
+  			<p><%= label_tag 'password','PASSWORD', :class=>'password_text'  %>
+  			<%= password_field_tag 'password', nil , :class=>'password_textfield' %></p>
+			
+  			<!-- Uncomment this if you want this functionality
+  			<p><%= label_tag 'remember_me', 'Remember me' %>
+  			<%= check_box_tag 'remember_me', '1', @remember_me %></p>
+  			-->
+  		  </div>
+		
+  		  <p> 
+  				<%= image_submit_tag 'login/login_btn.png' ,:class=>'login_btn' %>
+  		 </p>
+		 </div>
+		 
+	<% end -%>
+</div>	
+<div class='btm_img'></div>
+<div class='vinreo_btm'>
+  Vinrio Inventory System
+</div>
+		
+
+

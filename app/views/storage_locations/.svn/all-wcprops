@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/aplj_inventory/!svn/ver/238/rails/development/app/views/storage_locations
+END
+_index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/aplj_inventory/!svn/ver/122/rails/development/app/views/storage_locations/_index.html.erb
+END
+_new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/aplj_inventory/!svn/ver/105/rails/development/app/views/storage_locations/_new.html.erb
+END
+_list.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/aplj_inventory/!svn/ver/238/rails/development/app/views/storage_locations/_list.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/aplj_inventory/!svn/ver/238/rails/development/app/views/storage_locations/_form.html.erb
+END
+_edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/aplj_inventory/!svn/ver/105/rails/development/app/views/storage_locations/_edit.html.erb
+END

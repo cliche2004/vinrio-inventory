@@ -1,0 +1,29 @@
+class Item < ActiveRecord::Base
+  belongs_to :measurement
+  belongs_to :type, :class_name => 'ItemType', :foreign_key => :type_id
+  belongs_to :brand
+  has_many :item_releases
+  has_many :item_disbursements, :through => :item_releases
+  
+  has_many :item_specifics
+  has_many :item_supplier, :through => :suppliers
+  
+  validates_uniqueness_of :name, :scope =>  :brand_id,  :message => 'with brand is already exist'
+  
+  validates_presence_of :name, :serial_number, :barcode, :measurement_id, 
+                        :reorder_qty, :current_qty, :type_id,
+                        :storage_location_id
+  
+  validates_uniqueness_of :serial_number
+  
+  validates_numericality_of :current_qty, :reorder_qty
+  
+  class << self
+    
+    def reorder
+      
+    end
+  
+  end
+  
+end

@@ -1,0 +1,22 @@
+<div class="item-container" id="formHolder">	
+	<div style="width:400px; color:red" align="center">
+	   <% if flash[:notice] %>
+		    <div class="notice"> <%= flash[:notice] %> </div>
+	   <% end %>
+	</div>
+	<div style="width:800px;">
+	<%= form_remote_tag(:url => {:controller => 'supplier_contacts',:action => "ajax_update"}) %>		
+			<%= render :partial => "form" %>
+			<div style="clear:both"></div>
+			<div style="margin-top: 20px">
+				<div style="float: left; margin-top: 5px;">
+					<%= image_submit_tag ("update.jpg") %>
+				</div>
+			</div>	
+	</form>	
+	
+</div>
+</div>
+<div style="clear:both"></div>
+<br/>
+<div class="border-filler"></div>

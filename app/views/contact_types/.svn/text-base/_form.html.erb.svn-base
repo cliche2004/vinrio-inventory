@@ -1,0 +1,20 @@
+<div id="message_area" style="display:none"></div>	
+<div id="form-container">
+
+			<div class="header-text">
+			
+				<div >Contact Type Details</div>
+			</div>
+
+			<div class="border-filler"></div>
+			
+			<div class="field-holder">
+				<div id="form-label">
+					Name:
+				</div>
+				<div id="form-field">
+							<%= text_field :contact_type, :name, :size=>"67*39" %>
+				</div>
+			</div>
+	
+</div>

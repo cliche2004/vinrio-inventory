@@ -1,0 +1,56 @@
+<div class="headtitle">
+
+	<div class="headtxt">Consumable Items</div>
+	<div style="padding: 3px 10px;float:right">
+				<%= link_to_box image_tag('export-icon.gif', :title=>'export to CSV' ), 'reports/item_masters/export_list' %>
+	</div>
+ <br>	
+</div>
+<table class="listing" cellpadding="0" cellspacing="0" width="100%">
+	<thead class="lhead">
+		<th>Barcode</th>
+		<th>Description</th>
+		<th>Stock Level</th>
+		<th>OnHand</th>
+		<th>Unit</th>
+		<th>Price</th>
+		<th>Supplier</th>
+		<th>Receipt#</th>
+		<th>Created</th>
+		<th>Remarks</th>
+	</thead>
+	<tbody>
+		<% for item in @items do %>
+			<tr class="<%= cycle('odd','')%>" >
+				<td><%=item.barcode%></td>			
+				<td>
+					<%= item.description %>
+				</td>
+				<td>
+					<%= item.reorder_qty %>
+				</td>
+				<td>
+					<%= item.current_qty %>
+				</td>
+				<td>
+					<%= item.measurement.name if item.measurement %>
+				</td>
+				<td>
+				
+				</td>
+				<td>
+					
+				</td>
+				<td>
+					
+				</td>
+				<td>
+				  <%= item.created_at.strftime('%Y/%m/%d') %>
+				</td>		
+				<td align='center'><%= item.status %></td>
+			</tr>				
+		<%end%>
+	</tbody>
+</table>
+<div class="list-footer"></div>
+<div style="clear:both"></div>

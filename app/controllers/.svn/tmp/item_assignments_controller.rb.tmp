@@ -1,0 +1,147 @@
+class ItemAssignmentsController < ApplicationController
+  auto_complete_for :item, :name
+ 
+<<<<<<< .mine
+=======
+# def index
+#    render :partial => 'index'
+#  end
+  
+#  def new
+#  	@item_assignment = ItemRelease.new
+#  	render :partial => 'new'
+#  end
+>>>>>>> .r133
+  def index
+    @header = ItemDisbursement.new
+    _init
+    render :partial => 'index'
+  end
+ 
+  def ajax_list
+   
+<<<<<<< .mine
+  	@item_assignments = ItemRelease.find(:all)
+  	
+=======
+  	@item_assignment = ItemAssignment.find(:all)
+>>>>>>> .r133
+  	render :update do |page|
+			page.replace_html 'list', :partial => 'list' 
+	  end
+  end
+    
+  def ajax_new
+<<<<<<< .mine
+  	@item_assignment =ItemReleases.new
+=======
+  	@item_assignment =ItemRelease.new
+>>>>>>> .r133
+  	
+  	render :update do |page|
+		  page.replace_html 'list', :partial => 'new' 
+	  end
+  end
+  
+  def ajax_edit
+<<<<<<< .mine
+   	@item_assignment = ItemReleases.find(params[:id])
+  	
+=======
+   	@item_assignment = ItemAssignment.find(params[:id])
+>>>>>>> .r133
+  	render :update do |page|
+			page.replace_html 'list', :partial => 'edit' 
+
+	  end
+  end 
+  
+  def ajax_create
+<<<<<<< .mine
+  	@item_assignment = ItemReleases.new(params[:item_assignment])
+=======
+  	@item_assignment = ItemAssignment.new(params[:item_assignment])
+>>>>>>> .r133
+  	  	
+	render :update do |page|
+		if @item_assignment.save
+<<<<<<< .mine
+			@item_assignments = ItemReleases.find(:all)
+=======
+			@item_assignments = ItemAssigment.find(:all)
+>>>>>>> .r133
+			page.replace_html 'list', :partial => 'list' 			
+		else
+			page.replace_html 'message_area', error_messages_for(:item_assignment)
+		end
+	end
+   end 
+   
+  def ajax_update
+  	begin
+<<<<<<< .mine
+  	    @item_assignment = ItemReleases.find(params[:id])
+=======
+  	    @item_assignment = ItemRelease.find(params[:id])
+>>>>>>> .r133
+  	
+		render :update do |page|
+			if @item_assignment.update_attributes(params[:item_assignment])
+<<<<<<< .mine
+				@item_assignments = ItemReleases.find(:all)
+=======
+				@item_assignments = ItemRelease.find(:all)
+>>>>>>> .r133
+				page.replace_html 'list', :partial => 'list'
+			else
+	            page.replace_html 'message_area', error_messages_for(:item_assignment)
+	       end
+		end
+    rescue ActiveRecord::RecordNotFound => e
+    	render :update do |page|
+           page.replace_html 'message_area', "Record not found: #{params[:id]}"
+        end
+    end
+  end
+  
+  def ajax_delete
+<<<<<<< .mine
+  	@item_assignment = ItemReleases.find(params[:id])
+=======
+  	@item_assignment = ItemRelease.find(params[:id])
+>>>>>>> .r133
+    
+    render :update do |page|
+	  	if @item_assignment.destroy
+<<<<<<< .mine
+	  		@item_assignments = ItemReleases.find(:all)
+=======
+	  		@item_assignments = ItemRelease.find(:all)
+>>>>>>> .r133
+	  		page.replace_html 'list', :partial => 'list'
+	  	end
+	end
+  end
+  
+  def _init
+<<<<<<< .mine
+  	@projects = Project.find(:all, :select => ['id, name'])
+  	@users = User.find(:all, :select => ['id, name'])
+  	@items = Item.all(:limit => 5)
+=======
+  	@item_assignments = ItemRelease.find(:all)
+  	@types = ItemType.find(:all)
+  	@units = Measurement.find(:all)
+>>>>>>> .r133
+  end
+ 
+  # ajax item list
+  def ajax_item_list
+  	search = params[:item][:name] if params[:item]
+  	@items = Item.find(:all, :conditions => ['name LIKE ?', "%#{search}%"])
+  	render :update do |page|
+			page.replace_html 'item_list_table', :partial => 'item_list_table' 
+	  end
+  end
+  
+end

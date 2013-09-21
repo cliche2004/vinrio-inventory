@@ -1,0 +1,15 @@
+<div class="tcontent">
+	<div class="topheadtitle">
+		<div class="headtxt">Projects</div>
+	</div>
+	
+	<div class="submenu">
+		<%= link_to_remote image_tag("list-btn.jpg", :title=>'View Item List' ), :url => {:action => 'ajax_list' } %>
+	    <%= link_to_remote image_tag("new-btn.jpg", :title=>'Create New Item' ), :url => {:action => 'ajax_new' } %>
+		<div class="border-filler" style="margin:0"></div>
+	</div>
+		
+	<div class="lcontent" id="list">
+		<%= render :partial => "list" %>
+	</div>
+</div>

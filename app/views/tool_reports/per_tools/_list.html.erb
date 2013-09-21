@@ -1,0 +1,57 @@
+<div class="headtitle">
+
+	<div class="headtxt">Per-Tools</div>
+	<div style="padding: 3px 10px;float:right">
+		    <%= link_to_box image_tag('export-icon.gif', :title=>'export to CSV' ), 'tool_reports/per_tools/export_list' %>
+	</div>
+</div>
+
+<% for item in @items do %>
+			<% 
+				@disbursements = item.item_disbursements
+			 %>
+			<div style="margin: 5px 5px;">
+						Tool/Equipment: <strong><%= item.name %></strong>
+			</div>
+<table class="listing" cellpadding="0" cellspacing="0" width="100%">
+	<thead class="lhead">
+	    <th>Project/Location</th>
+	    <th>Borrowers Name</th>
+		<th>Date Borrowered</th>
+		<th>Released By</th>
+		<th>Remarks</th>
+		<th>Date Returned</th>
+	</thead>
+	<tbody>
+			<% for disbursement in @disbursements do %>
+				<tr class="<%= cycle('odd','')%>" >
+						<td>
+						     <%= disbursement.project.project_unique_id if disbursement.project  %>
+						</td>	
+						<td>
+						     <%= disbursement.employee.full_name if disbursement.employee %> 
+						</td>	
+						<td>
+							 <%= disbursement.project.start_date.strftime('%b %m, %Y') if disbursement.project %>  
+						</td>
+						<td>
+						    <%= disbursement.user.name if disbursement.user %> 
+						</td>
+						<td>
+						    <%= disbursement.comment if disbursement.comment %>
+						</td>	
+						<td>
+						    <%= disbursement.project.estimated_end_date.strftime('%b %m, %Y') if disbursement.project  %>
+						</td>				
+						<!--<td align='center'>
+						    <%= link_to_remote image_tag('icons/list_16.gif',:title=>'Details' ),
+	 	             	                    :url => {:action => 'ajax_details', :id => disbursement.id } %>
+						</td>-->
+				</tr>
+			<%end%>			
+
+	</tbody>
+</table>
+<%end%>
+<div class="list-footer"></div>
+<div style="clear:both"></div>

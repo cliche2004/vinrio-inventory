@@ -1,0 +1,51 @@
+<style>
+table {
+	margin: 0, auto
+}
+table tr td{
+	padding: 10px;
+	border-bottom: 1px solid #000;
+}
+</style>
+<div class="item-container" id="formHolder">	
+	<div style="width:800px;">		
+	
+		  <table>
+			  	<tr>
+			  		<td colspan=3><b>Lowest Price</b></td>
+			  	</tr>
+			  	
+				<% for low in @low_price do %>
+						<tr>		
+		  				<td>
+		  				    <b><%= low.price if low.price %></b>
+		  				</td>
+		  				<td>
+		  					<%= low.supplier.name %>
+		  				</td>
+		  				<td>
+		  					<%= low.created_at.strftime('%B %d, %Y') %>
+		  				</td>
+		  			</tr>			
+				<% end %>
+		
+			  	<tr>
+			  		<td colspan=3><b>Highest Price</b></td>
+			  	</tr>
+                 <tr>		
+		  				<td>
+		  				  <b> <%= @high_price.price if @high_price %> </b>
+		  				</td>
+		  				<td>
+		  					<%= @high_price.supplier.name if @high_price %>
+		  				</td>
+		  				<td>
+		  					<%= @high_price.created_at.strftime('%B %d, %Y') if @high_price %>
+		  				</td>
+		  		</tr>
+		  </table>
+    </div>
+</div>
+
+
+<div style="clear:both"></div>

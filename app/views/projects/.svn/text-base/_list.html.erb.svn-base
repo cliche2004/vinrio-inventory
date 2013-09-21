@@ -1,0 +1,60 @@
+<div class="headtitle">
+	<div class="headtxt">Project Listing</div>
+</div>
+
+<table class="listing" cellpadding="0" cellspacing="0" width="100%">
+	<thead class="lhead">
+		<th width="15%">NO</th>
+		<th>Client Name</th>
+		<th width="20%">Assigned Engineer</th>
+		<th width="5%">Profit</th>				
+		<th width="5%"></th>
+	</thead>
+	<tbody>
+		<% for project in @projects do %>
+			<tr class="<%= cycle('odd','')%>" >					
+				<td>
+				  <div style="font-size:14px">
+				    <%=project.project_unique_id %>
+				  </div>
+				</td>
+				<td>
+				  <div style="font-size:14px">
+					  <%= project.client ? project.client.name : 'N/A'  %>
+					</div>
+					<div class="ssub">
+						<b>Start Date:</b> <%= project.start_date %> <br />
+						<b>Estimated End Date:</b> <%= project.estimated_end_date %>
+					</div>				
+				</td>	
+				<td>
+				  <%= project.assigned_user ?  project.assigned_user.full_name : 'N/A' %>
+				  <div class="ssub">
+				    Total Contractor:
+				    <%= project.man_powers.count %>
+				  </div>
+				</td>
+				<td>			
+				  <% if current_user.is_admin? %>
+					  <%= number_to_currency(project.profit_margin, :unit => 'P') %>
+					<% end %>
+				</td>				
+				<td align='right'>
+					<span>
+						<%= link_to_remote image_tag('icons/users_add.gif',:title=>'Assign User' ),
+	 	             	                :url => {:action => 'user_assignment', :id => project.id } %>
+	 	       	<%= link_to_remote image_tag('icons/add.gif',:title=>'Create Problem Report' ),
+             	                    :url => {:action => 'user_problem_report', :id => project.id } %>                    
+            <%= link_to_remote image_tag('icons/edit.gif',:title=>'Update' ),
+             	                    :url => {:action => 'ajax_edit', :id => project.id } %>
+            <%= link_to_remote image_tag('icons/delete.png',:title=>'Delete' ),
+             	                    :url => {:action => 'ajax_delete', :id => project.id }, 
+								                  :confirm => 'Are you sure to delete?' %>
+	        </span>
+				</td>
+			</tr>				
+		<%end%>
+	</tbody>
+</table>
+<div class="list-footer"></div>
+<div style="clear:both"></div>

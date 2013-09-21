@@ -1,0 +1,50 @@
+	<div class="topheadtitle">
+		<div class="headtxt">Project Item Assignment</div>
+	</div>	
+	
+	<div class="submenu">
+		<%= link_to_remote image_tag("list-btn.jpg", :title=>'View Item List' ), :url => {:action => 'ajax_list' } %>
+	    <%= link_to_remote image_tag("new-btn.jpg", :title=>'Create New Item' ), :url => {:action => 'ajax_new' } %>
+		<div class="border-filler" style="margin:0"></div>
+	</div>
+
+<div class="headtitle">
+
+	<div class="headtxt">Item List</div>
+	<div style="padding-left:230px;padding-top:2px">
+			<%= render :partial => "search" %>
+	</div>
+</div>
+
+<table class="listing" cellpadding="0" cellspacing="0" width="100%">
+	<thead class="lhead">
+		<th width="25px" align='center'>ID</th>
+		<th width="50%">OR</th>
+		<th align='center'>Supplier</th>
+		<th align='center'>Prepared By</th>
+		<th></th>
+	</thead>
+	<tbody>
+		<% for header in @headers do %>
+			<tr class="<%= cycle('odd','')%>" >					
+				<td align='center'><%=header.id%></td>
+				<td>
+					<%= header.or if header.or %>
+				</td>
+				<td><%= header.supplier.name if header.supplier %></td>				
+				<td align='center'><%= header.user.name if header.user %></td>
+				<td align='right'>
+					<span>
+	 	             	<%= link_to_remote image_tag('icons/edit.gif',:title=>'Update' ),
+	 	             	                    :url => {:action => 'ajax_edit', :id => header.id } %>
+                         	<%= link_to_remote image_tag('icons/delete.png',:title=>'Delete' ),
+	 	             	                    :url => {:action => 'ajax_delete', :id => header.id }, 
+											:confirm => 'Are you sure to delete?' %>
+	                </span>
+				</td>
+			</tr>				
+		<%end%>
+	</tbody>
+</table>
+<div class="list-footer"></div>
+<div style="clear:both"></div>

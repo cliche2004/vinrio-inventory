@@ -1,0 +1,19 @@
+<div id="message_area" style="display:none"></div>
+<div class="item-container" id="formHolder">		
+		<div>
+			<div class="header-textproj">
+				<div style="width:200px">Purchase Revieving</div>
+				<div class="border-filler"></div>
+			</div>
+			<div style="text-align: center; margin-top: 10px">
+					Are you sure you whant to recieve stock for the selected order?<br>
+					<%= link_to_remote "Yes", :url => {:action => 'ajax_confirm_recieve', :id => @header.id } %> |
+					<%= link_to_remote "No", :url => {:action => 'ajax_list', :id => @header.id } %>
+			</div>
+		</div>
+</div>
+<div style="clear:both"></div>
+								
+						
+			
+			

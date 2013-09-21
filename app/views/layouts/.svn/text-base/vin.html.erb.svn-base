@@ -1,0 +1,38 @@
+<%= render :partial => 'layouts/header' %>
+<div class="site-container">
+	<div class="wrap">
+		<div class="curved-all">
+			<div id="header">
+				<div class="header-name">
+					<div id="company-name">VINRIO CONSTRUCTION CORP INVENTORY SYSTEM</div>
+					<div id="user-logged">Welcome  <b><%= current_user.name %></b>! | <%= link_to "Logout",logout_path%></div>
+				</div>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+	
+		<div id="content">
+			<%= render :partial => 'layouts/left' %>
+		
+			<div class="main-content" id="view-content">
+				<div id="content-container">					
+					
+					<%= yield %>
+				</div>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+		
+	</div><!--wrap ends-->
+</div><!-- site-container -->
+<script>
+	jQuery("#loader").bind("ajaxSend", function(){
+	   jQuery(this).show();
+	 }).bind("ajaxComplete", function(){
+	   jQuery(this).hide();
+	 });
+</script>
+
+<%= render :partial => 'layouts/footer' %>
+
+

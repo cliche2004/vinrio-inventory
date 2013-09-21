@@ -1,0 +1,56 @@
+<div class="headtitle">
+
+	<div class="headtxt">Consumable Item Report Filter</div>
+
+</div>
+
+ <%= form_remote_tag(:url => {:action => "ajax_item_search"}) %>	
+	<div id="form-container">
+
+
+		<div class="border-filler"></div>
+			
+		<div class="field-holder">
+			<div id="form-label">
+				Employee:
+			</div>
+			<div id="form-field">
+				<%= text_field :item, :search, :size=>"26*39"  %>
+			</div>
+		</div>
+
+    <div style="clear:both"></div>
+			<div style="margin-top: 20px">
+				<div style="margin-right: 10px;width:300px;text-align:right">
+					<%= image_submit_tag ("submit.gif") %>
+				</div>
+			</div>	
+</div>
+	</form>	
+<br>
+<div class="list-footer"></div>
+<div style="clear:both"></div>
+
+<style>
+	div.ui-datepicker{ font-size:10px; }
+	#ui-datepicker-div{ z-index:2500 !important; } 
+</style>
+
+<script type="text/javascript" charset="utf-8">
+
+  dates = $( "#item_start_date, #item_end_date" ).datepicker({
+
+		changeMonth: true,
+		changeYear: true,
+		onSelect: function( selectedDate ) {
+			option = this.id == "item_start_date" ? "minDate" : "maxDate",
+				instance = $( this ).data( "datepicker" ),
+				date = $.datepicker.parseDate(
+					instance.settings.dateFormat ||
+					$.datepicker._defaults.dateFormat,
+					selectedDate, instance.settings );
+			dates.not( this ).datepicker( "option", option, date );
+		}
+	});
+	
+</script>

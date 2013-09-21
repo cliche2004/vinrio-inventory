@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/aplj_inventory/!svn/ver/78/rails/development/config/initializers
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/aplj_inventory/!svn/ver/31/rails/development/config/initializers/inflections.rb
+END
+session_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/aplj_inventory/!svn/ver/31/rails/development/config/initializers/session_store.rb
+END
+site_keys.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/aplj_inventory/!svn/ver/78/rails/development/config/initializers/site_keys.rb
+END
+cookie_verification_secret.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/aplj_inventory/!svn/ver/31/rails/development/config/initializers/cookie_verification_secret.rb
+END
+backtrace_silencers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/aplj_inventory/!svn/ver/31/rails/development/config/initializers/backtrace_silencers.rb
+END
+new_rails_defaults.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/aplj_inventory/!svn/ver/31/rails/development/config/initializers/new_rails_defaults.rb
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/aplj_inventory/!svn/ver/31/rails/development/config/initializers/mime_types.rb
+END

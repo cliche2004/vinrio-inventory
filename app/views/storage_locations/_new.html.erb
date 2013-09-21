@@ -1,0 +1,25 @@
+<div class="item-container" id="formHolder">	
+	<div style="width:400px; color:red" align="center">
+	   <% if flash[:notice] %>
+		    <div class="notice"> <%= flash[:notice] %> </div>
+	   <% end %>
+	</div>
+	<div style="width:800px;">
+		<%= form_remote_tag(:url => {:action => "ajax_create"}) %>		
+			<%= render :partial => "form" %>	
+			<div style="clear:both"></div>
+			<div style="margin-top: 20px">
+				<div style="float: left; margin-top: 5px;">
+					<%= image_submit_tag ("create-btn.png") %>
+				</div>
+				<div  style="float:left;margin-top: 10px">
+					| <%= link_to_remote 'cancel', :url => {:action => 'ajax_list' } %>
+				</div>
+			</div>
+		</form>	
+	</div>
+</div>
+
+
+<div style="clear:both"></div>
+<div class="border-filler"></div>

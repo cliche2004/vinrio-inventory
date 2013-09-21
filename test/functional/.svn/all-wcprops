@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/aplj_inventory/!svn/ver/241/rails/development/test/functional
+END
+orders_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/aplj_inventory/!svn/ver/150/rails/development/test/functional/orders_controller_test.rb
+END
+items_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/aplj_inventory/!svn/ver/38/rails/development/test/functional/items_controller_test.rb
+END
+users_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/aplj_inventory/!svn/ver/150/rails/development/test/functional/users_controller_test.rb
+END
+supplier_contacts_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/aplj_inventory/!svn/ver/241/rails/development/test/functional/supplier_contacts_controller_test.rb
+END
+item_types_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/aplj_inventory/!svn/ver/57/rails/development/test/functional/item_types_controller_test.rb
+END
+suppliers_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/aplj_inventory/!svn/ver/57/rails/development/test/functional/suppliers_controller_test.rb
+END
+sessions_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/aplj_inventory/!svn/ver/150/rails/development/test/functional/sessions_controller_test.rb
+END
+personnel_returns_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/aplj_inventory/!svn/ver/198/rails/development/test/functional/personnel_returns_controller_test.rb
+END
+home_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/aplj_inventory/!svn/ver/36/rails/development/test/functional/home_controller_test.rb
+END
+measurements_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/aplj_inventory/!svn/ver/57/rails/development/test/functional/measurements_controller_test.rb
+END
+brands_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/aplj_inventory/!svn/ver/57/rails/development/test/functional/brands_controller_test.rb
+END

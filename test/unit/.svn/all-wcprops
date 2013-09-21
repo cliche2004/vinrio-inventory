@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/aplj_inventory/!svn/ver/241/rails/development/test/unit
+END
+supplier_contact_name_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/aplj_inventory/!svn/ver/44/rails/development/test/unit/supplier_contact_name_test.rb
+END
+user_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/aplj_inventory/!svn/ver/150/rails/development/test/unit/user_test.rb
+END
+supplier_contact_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/aplj_inventory/!svn/ver/241/rails/development/test/unit/supplier_contact_test.rb
+END
+man_power_assignment_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/aplj_inventory/!svn/ver/44/rails/development/test/unit/man_power_assignment_test.rb
+END
+item_disbursement_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/aplj_inventory/!svn/ver/37/rails/development/test/unit/item_disbursement_test.rb
+END
+measurement_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/aplj_inventory/!svn/ver/46/rails/development/test/unit/measurement_test.rb
+END
+brand_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/aplj_inventory/!svn/ver/37/rails/development/test/unit/brand_test.rb
+END
+purchase_order_detail_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/aplj_inventory/!svn/ver/37/rails/development/test/unit/purchase_order_detail_test.rb
+END
+assignment_history_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/aplj_inventory/!svn/ver/44/rails/development/test/unit/assignment_history_test.rb
+END
+supplier_contact_info_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/aplj_inventory/!svn/ver/44/rails/development/test/unit/supplier_contact_info_test.rb
+END
+contact_type_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/aplj_inventory/!svn/ver/44/rails/development/test/unit/contact_type_test.rb
+END
+storage_location_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/aplj_inventory/!svn/ver/37/rails/development/test/unit/storage_location_test.rb
+END
+item_return_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/aplj_inventory/!svn/ver/37/rails/development/test/unit/item_return_test.rb
+END
+item_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/aplj_inventory/!svn/ver/37/rails/development/test/unit/item_test.rb
+END
+item_release_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/aplj_inventory/!svn/ver/37/rails/development/test/unit/item_release_test.rb
+END
+purchase_recieve_detail_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/aplj_inventory/!svn/ver/44/rails/development/test/unit/purchase_recieve_detail_test.rb
+END
+item_type_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/aplj_inventory/!svn/ver/37/rails/development/test/unit/item_type_test.rb
+END
+problem_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/aplj_inventory/!svn/ver/44/rails/development/test/unit/problem_test.rb
+END
+supplier_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/aplj_inventory/!svn/ver/37/rails/development/test/unit/supplier_test.rb
+END
+item_specific_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/aplj_inventory/!svn/ver/37/rails/development/test/unit/item_specific_test.rb
+END
+user_contact_info_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/aplj_inventory/!svn/ver/44/rails/development/test/unit/user_contact_info_test.rb
+END
+purchase_order_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/aplj_inventory/!svn/ver/37/rails/development/test/unit/purchase_order_test.rb
+END
+project_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/aplj_inventory/!svn/ver/44/rails/development/test/unit/project_test.rb
+END
+purchase_recieve_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/aplj_inventory/!svn/ver/44/rails/development/test/unit/purchase_recieve_test.rb
+END

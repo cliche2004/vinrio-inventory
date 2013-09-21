@@ -1,0 +1,60 @@
+<script>
+	function select_day(){
+		post_url = 'supplier_contacts/get_contacts?id='+$('select[id=header_supplier_id]').val();
+		
+		$.post(post_url,function(data) {
+			$('#listing').html(data);
+		});	
+	}
+</script>
+<div id="message_area" style="display:none"></div>
+<div class="item-container" id="formHolder">		
+		<div id="form-container">
+			<div class="header-textproj">
+				<div style="width:100px">Purchase Details</div>
+				<div class="border-filler"></div>
+			</div>
+			<div class="field-holder">
+				<div id="form-label">
+					O.R. :
+				</div>
+				<div id="form-field">
+					<%= text_field :header, :or, :size=>"20*39" %>		
+				</div>
+			</div>
+	
+			<div class="field-holder">
+				<div id="form-label">
+					Supplier :
+				</div>
+				<div id="form-field">
+					<%= collection_select(:header, :supplier_id, @suppliers, :id, :name, {} , :style => 'width: 300px', :onChange => 'select_day()') %>			
+				</div>
+			</div>
+			
+			<div class="field-holder">
+				<div id="form-label">
+					Contact :
+				</div>
+				<div id="form-field" class="supplier_select">
+					<%= collection_select(:header, :supplier_contact_id, @contacts, :id, :name, {} , :style => 'width: 300px') %>			
+				</div>
+			</div>
+			
+			<div class="field-holder">
+				<div id="form-label">
+					Prepared By: 
+				</div>
+				<div id="form-field">
+					<%= text_field :purchase_orders, :user, :disabled => true,
+							:value => "#{current_user.name} @ #{Time.now.strftime('%Y/%m/%d')}" %> 
+					 <input type='hidden' value='<%= current_user.id %>' name='header[user_id]'>
+				</div>
+			</div>
+		</div>
+</div>
+<div style="clear:both"></div>
+								
+						
+			
+			
