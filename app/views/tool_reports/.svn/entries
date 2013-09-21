@@ -1,46 +1,0 @@
-10
-
-dir
-253
-https://subversion.assembla.com/svn/aplj_inventory/rails/development/app/views/tool_reports
-https://subversion.assembla.com/svn/aplj_inventory
-
-
-
-2012-02-25T05:54:40.647166Z
-252
-jronyagz
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4deb3575-9b1e-42fd-bd54-7e84ad1b9575
-
-per_persons
-dir
-
-per_projects
-dir
-
-usage_per_projects
-dir
-
-withdrawal_per_persons
-dir
-
-per_tools
-dir
-
-item_masters
-dir
-

@@ -1,8 +1,0 @@
-<div class="field-holder">
-	<div id="form-label">
-		Employee Name:
-	</div>
-	<div id="form-field" style="padding-top:10px">
-		<%= collection_select(:header, :employee_id, @employees, :id, :full_name, {}, :style => 'width: 400px;font-size:16px', :prompt => true) %>			
-	</div>
-</div>

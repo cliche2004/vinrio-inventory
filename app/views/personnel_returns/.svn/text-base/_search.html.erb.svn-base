@@ -1,3 +1,0 @@
-<div>
-	<%= text_field_tag :search, @search %>
-</div>

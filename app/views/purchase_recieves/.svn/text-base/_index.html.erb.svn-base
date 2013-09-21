@@ -1,6 +1,0 @@
-<div class="tcontent">
-  <div id="hlist">
-	<%= render :partial => "po_list" %>
-	<div class="border-filler"></div>
-</div>
-</div>

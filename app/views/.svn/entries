@@ -1,106 +1,0 @@
-10
-
-dir
-253
-https://subversion.assembla.com/svn/aplj_inventory/rails/development/app/views
-https://subversion.assembla.com/svn/aplj_inventory
-
-
-
-2012-02-25T05:56:15.918117Z
-253
-jronyagz
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4deb3575-9b1e-42fd-bd54-7e84ad1b9575
-
-contact_types
-dir
-
-storage_locations
-dir
-
-item_returns
-dir
-
-items
-dir
-
-item_types
-dir
-
-suppliers
-dir
-
-personnel_returns
-dir
-
-home
-dir
-
-purchase_orders
-dir
-
-projects
-dir
-
-tool_reports
-dir
-
-reports
-dir
-
-purchase_recieves
-dir
-
-layouts
-dir
-
-tools
-dir
-
-users
-dir
-
-clients
-dir
-
-supplier_contacts
-dir
-
-employees
-dir
-
-sessions
-dir
-
-consumable_reports
-dir
-
-measurements
-dir
-
-brands
-dir
-
-item_assignments
-dir
-
-purchase
-dir
-
-consumables
-dir
-

@@ -1,5 +1,0 @@
-<div class="tcontent">
-	<div class="lcontent" id="list">
-		<%= render :partial => "search" %>
-	</div>
-</div>
